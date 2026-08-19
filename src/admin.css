@@ -1,0 +1,58 @@
+/* MEDICAL ECOSYSTEM - ADMIN PORTAL STYLES */
+
+.admin-body {
+  background-color: #FAF8F5;
+  color: #1E293B;
+  font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+.admin-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 10px 24px;
+}
+
+.admin-telemetry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.telemetry-box {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.03);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+.admin-table th {
+  background: #E8F3ED;
+  padding: 8px 10px;
+  text-align: left;
+  color: #1E293B;
+  border-bottom: 1px solid rgba(0, 168, 120, 0.2);
+}
+
+.admin-table td {
+  padding: 10px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+@media (max-width: 1100px) {
+  .admin-telemetry-grid { grid-template-columns: repeat(2, 1fr); }
+}
